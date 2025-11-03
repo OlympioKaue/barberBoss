@@ -1,0 +1,32 @@
+@barberBoss.Api_HostAddress = https://localhost:7246
+
+GET {{barberBoss.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{barberBoss.Api_HostAddress}}/api/billings
+
+###
+
+GET {{barberBoss.Api_HostAddress}}/api/billings
+
+###
+
+GET {{barberBoss.Api_HostAddress}}/api/billings/{id:int}
+
+###
+
+POST {{barberBoss.Api_HostAddress}}/api/billings
+Content-Type: application/json
+
+{
+  //RequestBillings
+}
+
+###
+
+@id=0
+GET {{barberBoss.Api_HostAddress}}/api/Billings/{{id}}
+
+###

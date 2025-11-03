@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\BebasNeue-Regular.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\Raleway-Black.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\Raleway-Regular.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\Roboto-Medium.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\Roboto-Regular.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\WorkSans-Black.ttf" />
+    <None Remove="UseCases\ReportsUseCase\Pdf\Fonts\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\BebasNeue-Regular.ttf" />
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\Raleway-Black.ttf" />
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\Raleway-Regular.ttf" />
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\Roboto-Regular.ttf" />
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\WorkSans-Black.ttf" />
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\WorkSans-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\barberBoss.Communication\barberBoss.Communication.csproj" />
+    <ProjectReference Include="..\barberBoss.Domain\barberBoss.Domain.csproj" />
+    <ProjectReference Include="..\barberBoss.Exception\barberBoss.Exception.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="PDFsharp-MigraDoc" Version="6.2.2" />
+    <PackageReference Include="Scrutor" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="UseCases\ReportsUseCase\Pdf\Fonts\Roboto-Medium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="UseCases\ReportsUseCase\Pdf\Logo\barberBossLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
