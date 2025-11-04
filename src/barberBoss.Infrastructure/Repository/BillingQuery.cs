@@ -51,6 +51,8 @@ internal class BillingQuery : IBillingQuery
         var (start, end) = weeks[weekNumber - 1];
 
         return await _dbContext.Billings
-             .Where(x => x.CreatedAt.Date >= start.Date && x.CreatedAt.Date <= end.Date).ToListAsync();
+             .Where(x => x.Status != Communication.Enum.Status.Canceled &&
+                    x.PaymentMethod != Communication.Enum.PaymentMethod.NoTransaction &&
+                    x.CreatedAt.Date >= start.Date && x.CreatedAt.Date <= end.Date).ToListAsync();
     }
 }

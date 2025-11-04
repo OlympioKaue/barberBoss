@@ -43,6 +43,7 @@ public class ReportsBillingsPDF : IReportsBillingsPDF
         CreateHeaderWithProfilePhotoAndName(page);
 
         var resultTotal = resultBillings.Sum(ef => ef.Amount);
+
         CreateTotalBillingWeek(page, monthYear, weekNumber, resultTotal);
 
         foreach (var billing in resultBillings)
