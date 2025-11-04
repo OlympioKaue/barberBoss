@@ -5,7 +5,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=for-the-badge)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=000&style=for-the-badge)
 
-API desenvolvida em **.NET 8**, seguindo os princípios de **DDD (Domain-Driven Design)** para oferecer uma solução sólida, organizada e escalável voltada ao gerenciamento de faturamento de uma barbearia.
+API desenvolvida em **.NET 8**, seguindo os princípios de **DDD (Domain-Driven Design)** para oferecer uma solução sólida, organizada e escalável voltada ao gerenciamento de **faturamento de uma barbearia**.
 __________________________________________________________________________________________________________________________________
 
 ### 🧩 Sobre o projeto
