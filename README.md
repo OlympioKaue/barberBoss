@@ -1,4 +1,9 @@
 ## 💈 BarberBoss
+![.NET](https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=for-the-badge)
+![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=fff&style=for-the-badge)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=visualstudio&logoColor=fff&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=for-the-badge)
+![Swagger](https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=000&style=for-the-badge)
 
 API desenvolvida em **.NET 8**, seguindo os princípios de **DDD (Domain-Driven Design)** para oferecer uma solução sólida, organizada e escalável voltada ao gerenciamento de faturamento de uma barbearia.
 __________________________________________________________________________________________________________________________________
@@ -18,6 +23,10 @@ O principal objetivo da API é registrar e controlar os **faturamentos semanais*
 - Tipo de pagamento.
 
 Todos os dados são persistidos de forma segura e eficiente através do **Entity Framework Core (EF Core)** com o **MySQL** como banco de dados principal.
+
+![](images/faturamentobarberboss.png)
+
+
 __________________________________________________________________________________________________________________________________
 
 ### ⚙️ Arquitetura e boas práticas
@@ -65,3 +74,4 @@ ________________________________________________________________________________
 2. Preencha as informações no arquivo ``appsettings.example.json``
 3. Execute a API.
 4. Aproveite o teste.
+
